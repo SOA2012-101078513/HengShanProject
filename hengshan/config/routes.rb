@@ -58,6 +58,7 @@ Hengshan::Application.routes.draw do
 
   resources :travelmap
   root :to => redirect('/travelmap')
+  
 
 end
 
