@@ -1,0 +1,7 @@
+class CreateMessage < ActiveRecord::Migration
+  def up
+  end
+
+  def down
+  end
+end

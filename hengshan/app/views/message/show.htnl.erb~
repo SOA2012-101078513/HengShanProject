@@ -1,0 +1,14 @@
+<table>
+<tr>
+<th>Username</th>
+<th>Description</th>
+<th></th>
+<th></th>
+</tr>
+<% @msg.each do |msg| %>
+<tr>
+<td><%= msg.name %></td>
+<td><%= msg.description %></td>
+</tr>
+<% end %>
+</table>

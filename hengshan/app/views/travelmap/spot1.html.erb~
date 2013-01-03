@@ -1,0 +1,24 @@
+<h3>三叉埤</h3>
+<p><%= image_tag "spot1.jpg", :style => "width:683px;height:512px" %></p>
+
+<p><%= link_to 'New message', new_message_path %></p>
+<p><%= link_to 'Back', travelmap_index_path %></p>
+
+<table>
+<tr>
+<th>Username</th>
+<th>Description</th>
+<th></th>
+<th></th>
+</tr>
+<% @msg.each do |msg| %>
+<tr>
+<td><%= msg.name %></td>
+<td><%= msg.description %></td>
+</tr>
+<% end %>
+</table>
+
+<%= @test%>
+
+

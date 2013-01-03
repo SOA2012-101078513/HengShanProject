@@ -11,15 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130103013455) do
-
-  create_table "activities", :force => true do |t|
-    t.string   "title"
-    t.text     "description"
-    t.datetime "release_date"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
+ActiveRecord::Schema.define(:version => 20121231035501) do
 
   create_table "messages", :force => true do |t|
     t.string   "name"
@@ -28,7 +20,7 @@ ActiveRecord::Schema.define(:version => 20130103013455) do
     t.datetime "updated_at"
   end
 
-  create_table "travelmaps", :force => true do |t|
+  create_table "spot", :force => true do |t|
     t.string   "spotname"
     t.text     "spotinfo"
     t.datetime "created_at"

@@ -9,6 +9,9 @@ class MessageController < ApplicationController
     @message = Message.new
   end
 
+  def show
+    @msg = Message.all
+  end
   def edit
     @message = Message.find(params[:id])
   end

@@ -56,9 +56,12 @@ Hengshan::Application.routes.draw do
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id(.:format)))'
 
-  resources :travelmap
-  root :to => redirect('/travelmap')
-  
+resources :travelmap do
+    get 'spot1', :on => :collection # Route GET /travelmap/spot1
+    get 'spot2', :on => :collection # Route GET /travelmap/spot2
+end
+resources :message
+resources :activities
+root :to => redirect('/travelmap')
 
 end
-

@@ -1,0 +1,34 @@
+<h1>HengShan Website</h1>
+<div id="list">
+<h1>
+橫山社區活動公告
+</h1>
+<table class="activities">
+<thead>
+<tr>
+<th width=75px>活動主題</th>
+<th>活動描述</th>
+<th>活動時間</th>
+<!-- <th>修改活動</th>
+<th>刪除活動</th> -->
+</tr>
+</thead>
+<tbody>
+<% @activity.each do | activity | -%>
+                        <tr>
+                                <td><%= activity.title%></td>
+<td><%= activity.description%></td>
+                                <td><%= activity.release_date%></td>
+
+<!-- <td><%=link_to '刪除', activities_path(@activity), :method => :delete%></td> -->
+                        </tr>	
+<% end-%>
+</tbody>
+</table>
+
+<p><%= link_to 'HengShan Activities', activities_path %></p>
+<p><%= image_tag "map.jpg", :style => "width:900px;height:500px" %></p>
+<p><%= link_to 'spot1',  :controller => "travelmap", :action => "spot1" %></p>
+<p><%= link_to 'spot2',  :controller => "travelmap", :action => "spot2" %></p>
+
+

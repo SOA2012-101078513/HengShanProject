@@ -1,0 +1,11 @@
+<h2>leave your message</h2>
+<p><%= form_tag '/message', :method=>nil do%>
+
+<%= label :message, :name, "Name:"%><br />
+<%= text_field :message, :name%>
+<br />
+<%= label :message, :description, 'Description:'%><br />
+<%= text_area :message, :description%>
+<br />
+<%= submit_tag 'create'%>
+<% end%></p>

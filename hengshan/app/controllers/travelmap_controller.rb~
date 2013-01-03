@@ -1,9 +1,16 @@
 class TravelmapController < ApplicationController
+  def index
+  end
 
   def show
-  end  
+  end
 
-  def new
+  def spot1
+    @msg = Message.all
+  end
+
+  def spot2
+    @msg = Message.all
   end
 
 end
